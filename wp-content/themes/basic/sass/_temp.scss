@@ -165,10 +165,16 @@ p {
 .link-white:hover, .link-white:focus, .link-white:active {
   color: #dfe1e5 !important; }
 
-.navbar-custom {
+
+.home .navbar-custom {
   position: absolute;
   width: 100%;
-  background: transparent; }
+  background: transparent;
+  z-index: 1; }
+
+.navbar-custom {
+  background: #000;
+}
 
 a.navbar-brand, a.logo {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -354,7 +360,7 @@ li.nav-item .btn-white {
       color: #59a0d7; }
 
 .features-4 {
-  background: #2b2d34;
+  background: #3d3e42;
   padding: 5rem 0; }
   .features-4 h2 {
     margin-top: 2rem;
@@ -391,7 +397,7 @@ li.nav-item .btn-white {
       color: #59a0d7; }
 
 .cta-1 {
-  background: #2b2d34;
+  background: #3d3e42;
   color: #fff;
   padding: 5rem 0; }
   .cta-1 p {
@@ -571,8 +577,7 @@ li.nav-item .btn-white {
   margin: .4rem .1rem;
   text-align: center;
   text-decoration: none;
-  background: #fff;
-  color: #696b6e;
+  color: #fff;
   border: 0.1rem solid #dfe1e5;
   border-radius: 499rem;
   line-height: 1.5;
@@ -1017,7 +1022,7 @@ li.nav-item .btn-white {
     color: #59a0d7; }
 
 .footer-3 {
-  background: #f7f7f8;
+  background: #59a0d7;
   width: 100%;
   color: #46484a;
   padding-top: 1rem;
@@ -1039,7 +1044,10 @@ li.nav-item .btn-white {
       color: #59a0d7; }
   .footer-3 .social li a {
     background: none;
-    border: none; }
+    border: none; 
+  }
+  .footer-3 .social li a:hover { color: #777;}
+  .footer-3 p {color: #fff;}
 
 .footer-4 {
   background: #2b2d34;

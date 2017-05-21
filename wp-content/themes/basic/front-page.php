@@ -2,8 +2,8 @@
 <section class="cover-1 text-center">
   <div class="cover-container pb-5" id="welcome">
     <div class="cover-inner container">
-        <h1 class="jumbotron-heading">Say <em>hello</em> to our  <strong>Startup UI Kit</strong></h1>
-        <p class="lead">A collection of coded HTML and CSS elements to help your build your startup website. Clean design, fully responsive and based on Bootstrap 4.</p>
+        <h1 class="jumbotron-heading">Say <em>hello</em> to our  <strong>Basic Startup Theme</strong></h1>
+        <p class="lead">A collection of coded HTML and CSS elements to help your build your basic website. Clean design, fully responsive and based on Bootstrap 4.</p>
         <p>
           <a href="#" class="btn btn-primary btn-lg mb-2 mr-2 ml-2">Main call to action</a>
           <a href="#" class="btn btn-outline-white btn-lg mb-2 ml-2 ml-2">Secondary action</a>
@@ -17,7 +17,7 @@
   <div class="container">
     <div class="row justify-center">
       <div class="col-md-8 text-center">
-        <h2>Features</h2>
+        <h2>Welcome</h2>
         <p class="lead mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus erat sed sem sagittis cursus.</p>
         <div class="divider"></div>
       </div>  
@@ -27,28 +27,28 @@
         <div class="rounded-circle justify-center">
           <em class="fa fa-2x fa-paint-brush"></em>
         </div>
-        <h4>Clean Design</h4>
+        <h4>About us</h4>
         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
       </div>
       <div class="col-md-3 col-feature">
         <div class="rounded-circle justify-center">
           <em class="fa fa-2x fa-mobile"></em>
         </div>
-        <h4>Responsive</h4>
+        <h4>Services</h4>
         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
       </div>
       <div class="col-md-3 col-feature">
         <div class="rounded-circle justify-center">
           <em class="fa fa-2x fa-code"></em>
         </div>
-        <h4>Bootstrap 4</h4>
+        <h4>Latest News</h4>
         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
       </div>
       <div class="col-md-3 col-feature">
         <div class="rounded-circle justify-center">
           <em class="fa fa-2x fa-pencil"></em>
         </div>
-        <h4>Easy to Edit</h4>
+        <h4>Contact us</h4>
         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
       </div>
     </div>

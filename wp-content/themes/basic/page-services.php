@@ -2,7 +2,7 @@
 
 <section class="gallery-3 text-center">
   <div class="container">
-    <h2>Latest News</h2>
+    <h2>Our Services</h2>
     <div class="divider"></div>
     <div class="row">
       <div class="col-sm-6 col-md-4 col-gallery">
