@@ -166,7 +166,9 @@ p {
   color: #dfe1e5 !important; }
 
 .navbar-custom {
-  background: #000; }
+  position: absolute;
+  width: 100%;
+  background: transparent; }
 
 a.navbar-brand, a.logo {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -188,7 +190,7 @@ li.nav-item .btn-white {
   background: #2b2d34 url(../images/cover-bg-1.jpg) center;
   background-size: cover;
   min-height: 50rem;
-  height: auto;
+  height: 100vh;
   border-radius: 0;
   width: 100%;
   color: #fff;
