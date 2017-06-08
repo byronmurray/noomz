@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
+
 <!-- Contact us -->   
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d17752.017372427184!2d176.25029293829252!3d-38.13686853320569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snz!4v1495010276219" width="2000" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div id="map"></div>
 
 <section class="contact-1" id="contact">
   <div class="container">
@@ -61,5 +62,29 @@
     </div>
   </div>
 </section>
+
+<script>
+  function initMap() {
+    var myLatLng = {lat: -38.1396099, lng: 176.2473443};
+
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: myLatLng,
+      scrollwheel: false,
+      zoom: 14
+    });
+
+    // Create a marker and set its position.
+    var marker = new google.maps.Marker({
+      map: map,
+      position: myLatLng,
+      title: 'My Location!'
+    });
+  }
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtxqwb-9TB4RCoYX1XnJ2_QQYReNhx_0M&callback=initMap"
+async defer></script>
 
 <?php get_footer(); ?>

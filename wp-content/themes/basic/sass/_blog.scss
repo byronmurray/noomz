@@ -1,0 +1,56 @@
+.gallery-3 {
+  padding: 5rem 0; }
+  .gallery-3 .container-fluid {
+    padding-right: 0;
+    padding-left: 0; }
+  .gallery-3 .col-gallery {
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+    .gallery-3 .col-gallery img {
+      width: 100%; }
+
+/* Single */
+
+.cover-blog {
+	background-size: cover !important;
+}
+.cover-blog {
+	min-height: 20rem;
+	height: 50vh;
+	border-radius: 0;
+	width: 100%;
+	color: #fff;
+	padding-top: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+#blog {
+	margin:auto;
+	.lead {
+		color:#fff;
+	}
+}
+
+.blog-post {
+	padding: 5rem 0;
+	background: #fff;
+}
+
+.single-post{
+	.gallery-3 {
+		background: $secondary-background;
+	}
+	.navbar-custom {
+	    position: absolute;
+	    width: 100%;
+	    background: transparent;
+	    z-index: 1;
+	}
+}
+
+.alignleft{
+	@extend .float-md-left;
+	margin-right: 10px;
+}
+

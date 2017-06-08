@@ -5,6 +5,7 @@
 <section class="team-4 text-center">
   <div class="container">
     <h2 class="mb-3">About Us</h2>
+    <p class="lead mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem ratione repudiandae aspernatur quos architecto repellat corrupti, placeat porro ad fuga doloribus, voluptas officiis tenetur. Harum iusto, dolorum repudiandae repellat.</p>
     <div class="divider"></div>
     <div class="row">
       <div class="col-md-3 col-team">
@@ -71,7 +72,10 @@
         <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis.</p>
       </div>
     </div>
-    <div class="row justify-center mt-5">
+    
+    <!-- content block -->
+
+    <!-- <div class="row justify-center mt-5">
       <div class="col-md-6 pl-5 pr-5 text-center">
         <img class="mb-4 img-fluid" src="<?php echo get_template_directory_uri() ?>/images/placeholder-desk.jpg">
       </div>
@@ -81,7 +85,7 @@
         <p><a class="btn btn-primary mr-2" href="#" role="button">Get Started</a>
         <a class="btn btn-outline-secondary" href="#" role="button">Find out more</a></p>
       </div>
-    </div>
+    </div> -->
   </div>
 </section>
 

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<section class="cover-1 text-center">
+<section class="cover-1 text-center" style="background: #2b2d34 url(<?php echo get_theme_mod('cover-image', get_template_directory_uri() . '/images/cover-bg-1.jpg') ?>) center;">
   <div class="cover-container pb-5" id="welcome">
     <div class="cover-inner container">
         <h1 class="jumbotron-heading">Say <em>hello</em> to our  <strong>Basic Startup Theme</strong></h1>
@@ -12,7 +12,47 @@
   </div>
 </section>
 
-<!-- Features -->
+<!-- Features images -->
+
+<section class="gallery-4 text-center">
+  <div class="container">
+    <div class="row justify-center">
+      <div class="col-md-8 text-center">
+        <h2>Welcome</h2>
+        <p class="lead mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse cursus erat sed sem sagittis cursus.</p>
+        <div class="divider"></div>
+      </div>  
+    </div>
+    <div class="row text-center">
+      <div class="col-sm-6 col-md-4 col-gallery">
+        <div class="box">
+          <img src="<?php echo get_template_directory_uri() ?>/images/placeholder-image-1.jpg" class="img-fluid rounded-corners">
+          <h4 class="mt-4 ml-4 mr-4">About us</h4>
+          <p class="ml-4 mr-4">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+          <p><a class="btn btn-outline-secondary" href="#" role="button">More details</a></p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-gallery">
+        <div class="box">
+          <img src="<?php echo get_template_directory_uri() ?>/images/placeholder-image-2.jpg" class="img-fluid rounded-corners">
+          <h4 class="mt-4 ml-4 mr-4">Services</h4>
+          <p class="ml-4 mr-4">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+          <p><a class="btn btn-outline-secondary" href="#" role="button">More details</a></p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-4 col-gallery">
+        <div class="box">
+          <img src="<?php echo get_template_directory_uri() ?>/images/placeholder-image-3.jpg" class="img-fluid rounded-corners">
+          <h4 class="mt-4 ml-4 mr-4">Contact us</h4>
+          <p class="ml-4 mr-4">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+          <p><a class="btn btn-outline-secondary" href="#" role="button">More details</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features icons -->
 <section class="features-4 text-center" id="services">
   <div class="container">
     <div class="row justify-center">

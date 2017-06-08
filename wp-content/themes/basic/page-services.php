@@ -3,6 +3,7 @@
 <section class="gallery-3 text-center">
   <div class="container">
     <h2>Our Services</h2>
+    <p class="lead mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem ratione repudiandae aspernatur quos architecto repellat corrupti, placeat porro ad fuga doloribus, voluptas officiis tenetur. Harum iusto, dolorum repudiandae repellat.</p>
     <div class="divider"></div>
     <div class="row">
       <div class="col-sm-6 col-md-4 col-gallery">

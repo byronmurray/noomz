@@ -25,11 +25,6 @@ jQuery.noConflict();
 		$("#featureCarousel .item").css("height", windowHeight + 'px');
 
 
-	
-	
- 
-
-
   });
 })(jQuery);
 

@@ -1,0 +1,48 @@
+@media screen and (max-width: 768px) {
+  .team-5 .col-team {
+    padding-bottom: 2rem; } }
+.social {
+  margin: 0 auto;
+  padding: 0; }
+
+.social li {
+  display: inline-block; }
+
+.social li a {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: .4rem .1rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 0.1rem solid #dfe1e5;
+  border-radius: 499rem;
+  line-height: 1.5;
+  font-size: 1.4rem; }
+
+.social li a:hover {
+  color: $brand-primary;
+  border-color: $brand-primary; }
+
+.cell img {
+  display: block; }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+.cell {
+  width: calc(100% / 4);
+  margin: .5rem;
+  width: calc(25% - 1rem); }
+
+@media screen and (max-width: 992px) {
+  .cell {
+    width: 33.333%;
+    width: calc(33.333% - 1rem); } }
+@media screen and (max-width: 768px) {
+  .cell {
+    width: 50%;
+    width: calc(50% - 1rem); } }
