@@ -49,19 +49,7 @@
   </div>
 </section>
 
-<!--  Testimonials -->
-<section class="testimonial-4 text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 offset-sm-2">
-        <blockquote>
-          <p class="quote-text">"We shall not cease from exploration, and the end of all our exploring will be to arrive where we started and know the place for the first time."</p>
-          <p><span class="quote-author">T. S. Elliot</span></p>
-        </blockquote>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part( 'includes/testimonials' ) ?>
 
 <script>
   function initMap() {

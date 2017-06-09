@@ -1,5 +1,9 @@
 #menu-main-menu li {
   padding-right: 15px;
+  text-transform: capitalize;
+  a {
+    color: #fff;
+  }
 }
 
 .home .navbar-custom {

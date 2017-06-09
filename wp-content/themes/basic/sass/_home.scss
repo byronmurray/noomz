@@ -1,3 +1,25 @@
+.home .col-gallery {
+  display: flex;
+}
+
+.testimonial-item .carousel-caption {
+  position: relative;
+}
+
+.testimonial-item blockquote p {
+    font-size: 1.8rem;
+    font-weight: 300;
+    font-style: italic;
+    color: #fff;
+}
+
+.end {
+  margin-top: auto;
+}
+
+
+
+
 .cover-inner {
   display: table-cell;
   vertical-align: middle; }
@@ -33,7 +55,10 @@
     padding: 0rem;
     padding-bottom: 1rem;
     margin-bottom: 0rem;
-    border-radius: .3rem; }
+    border-radius: .3rem;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex; }
   .gallery-4 .col-gallery {
     margin-top: 2rem;
     margin-bottom: 0rem; }

@@ -11,27 +11,7 @@
       position: relative;
       display: inline-block;
       margin-bottom: 1.5rem; }
-    .team-4 .col-team figcaption {
-      border-radius: .3rem;
-      display: none;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: #fff; }
-    .team-4 .col-team figure:hover figcaption {
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-    .team-4 .col-team .social li a {
-      border: none !important;
-      background: none !important;
-      color: #fff !important;
-      font-size: 1.6rem; }
-    .team-4 .col-team .social li a:hover {
-      color: $brand-primary !important; }
+    
 
 .content-1, .content-2, .content-4, .content-5 {
   background: #fff;

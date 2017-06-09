@@ -5,9 +5,29 @@
     padding-left: 0; }
   .gallery-3 .col-gallery {
     padding-top: 2rem;
-    padding-bottom: 2rem; }
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+	padding-bottom: 2rem;
+	justify-content: flex-start;
+	display: flex;
+	flex-direction: column; }
     .gallery-3 .col-gallery img {
       width: 100%; }
+
+.blog-feature {
+	background-size: cover !important;
+}
+
+.pagination-nav {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+.col-gallery h4 {
+	min-height: 34px;
+}
+
 
 /* Single */
 

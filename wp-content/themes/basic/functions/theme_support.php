@@ -16,5 +16,5 @@ add_theme_support( 'post-thumbnails' );
 add_post_type_support( 'page', 'excerpt' );
 
 
-/*add_image_size( 'hero_image', 1900, 300, array( 'center', 'center' ) );*/
+add_image_size( 'blog_thumb', 530, 353, array( 'center', 'center' ) );
 
