@@ -2,6 +2,15 @@
   display: flex;
 }
 
+.blog-feature {
+  transition: all .5s ease-in-out;
+  background-size: 100% !important;
+}
+
+.blog-feature:hover {
+    background-size: 110% !important;
+ } 
+
 .testimonial-item .carousel-caption {
   position: relative;
 }
@@ -16,9 +25,6 @@
 .end {
   margin-top: auto;
 }
-
-
-
 
 .cover-inner {
   display: table-cell;

@@ -27,7 +27,7 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="/">Startup Basic</a>
+    <a class="navbar-brand" href="/"><?php echo get_option('blogname'); ?></a>
     <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarToggler">
       
         <?php
