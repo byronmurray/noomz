@@ -72,28 +72,28 @@
         <h3>Ask us a question</h3>
 
 
-        <div id="respond">
-          <?php echo $response; ?>
-          <form action="<?php the_permalink(); ?>" method="post" class="contact-form mt-4">
-            <div class="row">
-              <div class="col-md-5">
-                <input type="text" name="message_name" class="form-control-custom mb-4" value="<?php echo esc_attr($_POST['message_name']); ?>" placeholder="Name">
-              </div>
-              <div class="col-md-5">
-                <input type="text" name="message_email" class="form-control-custom mb-4" value="<?php echo esc_attr($_POST['message_email']); ?>" placeholder="Email address">
-              </div>
-              <div class="col-md-10">
-                <textarea type="text" name="message_text" class="form-control-custom mb-4" placeholder="Your Message" ><?php echo esc_textarea($_POST['message_text']); ?></textarea>
-                <br>
-                <input type="hidden" name="submitted" value="1">
-                <!-- <div><label for="message_human">Human Verification: <span>*</span> <br><input type="text" style="width: 60px;" name="message_human"> + 3 = 5</label></div> -->
+<!--         <div id="respond">
+  <?php echo $response; ?>
+  <form action="<?php the_permalink(); ?>" method="post" class="contact-form mt-4">
+    <div class="row">
+      <div class="col-md-5">
+        <input type="text" name="message_name" class="form-control-custom mb-4" value="<?php echo esc_attr($_POST['message_name']); ?>" placeholder="Name">
+      </div>
+      <div class="col-md-5">
+        <input type="text" name="message_email" class="form-control-custom mb-4" value="<?php echo esc_attr($_POST['message_email']); ?>" placeholder="Email address">
+      </div>
+      <div class="col-md-10">
+        <textarea type="text" name="message_text" class="form-control-custom mb-4" placeholder="Your Message" ><?php echo esc_textarea($_POST['message_text']); ?></textarea>
+        <br>
+        <input type="hidden" name="submitted" value="1">
+        <div><label for="message_human">Human Verification: <span>*</span> <br><input type="text" style="width: 60px;" name="message_human"> + 3 = 5</label></div>
 
-                <button type="submit" class="btn btn-primary btn-lg mb-4">Send Message</button>
-              </div>
+        <button type="submit" class="btn btn-primary btn-lg mb-4">Send Message</button>
+      </div>
 
-            </div>
-          </form>
-        </div>
+    </div>
+  </form>
+</div> -->
 
 
 
