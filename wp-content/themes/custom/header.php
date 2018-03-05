@@ -24,7 +24,7 @@
 </div>
 <![endif]-->
 
-<nav class="navbar">
+<nav class="navbar"> <!-- include partials -->
     <div class="navbar__brand">
       <a href="/"><?php echo get_option('blogname'); ?></a>
     </div>

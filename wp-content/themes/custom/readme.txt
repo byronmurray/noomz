@@ -7,3 +7,14 @@ Animation on the hover of portfolio. Expand outward from the center
 
 
 DRY up code before starting anything new.
+
+
+
+Go through functions and make better structure
+
+
+
+404 and index pages
+
+
+Test page-portfolio, it may query the posts now caus we are using the cp portfolio
