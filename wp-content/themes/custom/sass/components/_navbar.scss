@@ -1,1 +1,48 @@
+.navbar {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding: 0 20px;
+    min-height: 50px;
+    background: black;
+    align-items: center;
+    z-index: 999;
 
+    &__brand {
+      a {
+        text-decoration: none;
+        color: $white;
+        font-family: $font-family-secondary;
+        font-size: 2em;
+      }
+    }
+
+    &__nav {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline-block;
+      }
+      a {
+        display: block;
+        padding: 0 10px;
+        color: $white;
+        font-size: 1.2em;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+}
+
+
+.home .navbar {
+  position: absolute;
+  background: transparent;
+}

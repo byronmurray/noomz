@@ -1,0 +1,111 @@
+// split-layout
+.page-template-page-php {
+  .navbar {
+    background: transparent;
+    li a {
+      color: $black; //get better color
+    }
+  }
+}
+.split-layout {
+  display: flex;
+  min-height: 100vh;
+  &__feature-image {
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    h1 { // update and moce this class
+      color: #fff;
+      font-family: "Kaushan Script", cursive;
+      font-size: 6em;
+      font-style: italic;
+      border-bottom: 4px solid white;
+      padding-bottom: 20px;
+    }
+  }
+  &__content-wrap {
+    width: 100%;
+    padding-left: 40%;
+    position: relative;
+  }
+  &__content {
+    max-width: 65%;
+    margin-top: 30%;
+    padding: 0 2.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4em;
+  }
+  &__heading {
+    text-align: center;
+    .social {
+      margin-top: 1em;
+      i {
+        color: $white;
+        font-size: 1.5em;
+        padding: 4px;
+      }
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    .copyright {
+      text-align: right;
+      padding-right: 2em;
+      padding-bottom: 1em;
+    }
+  }
+
+}
+
+
+// sidebar layout
+.side-menu {
+
+  &__container {
+    background: $black;
+  }
+
+  &__navbar {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    background: black;
+  }
+
+  &__list {
+    position: fixed;
+    padding: 0;
+    li {
+      padding: 8px;
+    }
+    a {
+      font-size: 1.5em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__content {
+    background: #fff;
+    min-height: calc(100vh - 50px);
+
+    padding-left: 300px;
+    padding-top: 50px;
+  }
+
+}

@@ -6,9 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://developers.google.com/maps/documentation/javascript/demos/demos.css">
-
-  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i,700,700i|Montserrat:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
 
   <?php wp_head(); ?>
@@ -22,22 +20,18 @@
 </div>
 <![endif]-->
 
-<nav class="navbar navbar-toggleable-sm navbar-custom navbar-inverse">
-  <div class="container">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <a class="navbar-brand" href="/"><?php echo get_option('blogname'); ?></a>
-    <div class="collapse navbar-collapse pull-xs-right justify-content-end" id="navbarToggler">
-
-        <?php
-            wp_nav_menu( array(
-                'menu'              => 'primary',
-                'theme_location'    => 'primary',
-                'menu_class'        => 'navbar-nav',
-                )
-            );
-        ?>
+<nav class="navbar">
+    <div class="navbar__brand">
+      <a href="/"><?php echo get_option('blogname'); ?></a>
     </div>
-  </div>
+
+    <?php
+        wp_nav_menu( array(
+            'menu'              => 'primary',
+            'theme_location'    => 'primary',
+            'menu_class'        => 'navbar__nav',
+            )
+        );
+    ?>
+
 </nav>

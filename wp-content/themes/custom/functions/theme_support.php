@@ -1,9 +1,9 @@
-<?php 
+<?php
 function register_theme_menus() {
   register_nav_menus(
     array(
       'primary' => __( 'Primary Menu' ),
-      'footer' => __( 'Footer Menu' )
+      'portfolio' => __( 'Portfolio Menu' )
     )
   );
 }
@@ -17,4 +17,3 @@ add_post_type_support( 'page', 'excerpt' );
 
 
 add_image_size( 'blog_thumb', 530, 353, array( 'center', 'center' ) );
-

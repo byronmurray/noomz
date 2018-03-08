@@ -1,5 +1,16 @@
 <?php
 
+add_action( 'init', 'create_portfolio_tax' );
+function create_portfolio_tax() {
+	register_taxonomy('portfolio', 'art',
+		array(
+			'label' => __( 'Art Work' ),
+			'rewrite' => array( 'slug' => 'portfolio' ),
+			'hierarchical' => true,
+		)
+	);
+}
+
 /**
  * Filter the excerpt "read more" string.
  *
