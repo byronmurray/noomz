@@ -6,11 +6,11 @@
     <h2 class="cover__title">street artist</h2>
     <img src="" alt="">
     <div class="cover__catergory-list">
-      <a href="portfolio/street-art">street-art</a>
-      <a href="portfolio/graphic-design">graphic-design</a>
-      <a href="portfolio/media-coverage">media-coverage</a>
-      <a href="portfolio/fine-art">fine-art</a>
-      <a href="portfolio/photography">photography</a>
+      <a href="portfolios/street-art">street art</a>
+      <a href="portfolios/graphic-design">graphic design</a>
+      <a href="portfolios/media-coverage">media coverage</a>
+      <a href="portfolios/fine-art">fine art</a>
+      <a href="portfolios/photography">photography</a>
     </div>
   </div>
 

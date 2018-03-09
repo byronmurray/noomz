@@ -2,20 +2,11 @@
 
 <div class="side-menu__container">
 
-  <div class="side-menu__navbar">
-    <ul class="side-menu__list">
-      <li><a href="/portfolio/">View All</a></li>
-      <li><a href="/portfolio/street-art">street art</a></li>
-      <li><a href="/portfolio/graphic-design">graphic design</a></li>
-      <li><a href="/portfolio/media-coverage">media coverage</a></li>
-      <li><a href="/portfolio/fine-art">fine art</a></li>
-      <li><a href="/portfolio/photography">photography</a></li>
-    </ul>
-  </div>
+  <?php get_template_part( 'includes/side_menu' ) ?>
 
   <div class="side-menu__content portfolio">
     <?php $args = array(
-         'post_type' => 'art',
+         'post_type' => 'portfolio',
        );
 
     $art = new WP_Query($args);

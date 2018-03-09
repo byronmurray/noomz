@@ -55,7 +55,8 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   background: #fff;
-  font-family: 'Anton', sans-serif !important; }
+  font-family: 'Anton', sans-serif !important;
+  line-height: 1.6; }
 
 * {
   box-sizing: border-box; }
@@ -160,7 +161,8 @@ body {
       font-size: 6em;
       font-style: italic;
       border-bottom: 4px solid white;
-      padding-bottom: 20px; }
+      padding-bottom: 20px;
+      text-shadow: 1px 1px black; }
   .split-layout__content-wrap {
     width: 100%;
     padding-left: 40%;
@@ -280,7 +282,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     flex: 1 1 25%;
-    height: 50vh;
+    height: calc(50vh - 25px);
     position: relative; }
     .portfolio__item:nth-child(3), .portfolio__item:nth-child(4) {
       flex: 1 1 50%; }
@@ -291,6 +293,22 @@ body {
       opacity: 1; }
     .portfolio__item:hover > .portfolio__link {
       background: rgba(0, 0, 0, 0.8); }
+  .portfolio .portfolio__item-featured {
+    height: calc(100vh - 50px);
+    width: 100%;
+    display: flex;
+    align-items: center; }
+    .portfolio .portfolio__item-featured h2 {
+      opacity: 1; }
+    .portfolio .portfolio__item-featured .portfolio__content {
+      position: unset;
+      left: unset;
+      top: unset;
+      transform: unset;
+      text-align: unset;
+      max-width: 50%;
+      margin-top: 50px;
+      margin-left: 60px; }
 
 .page-template-page-services .navbar {
   background: transparent; }

@@ -2,10 +2,10 @@
 
 add_action( 'init', 'create_portfolio_tax' );
 function create_portfolio_tax() {
-	register_taxonomy('portfolio', 'art',
+	register_taxonomy('portfolios', 'portfolio',
 		array(
-			'label' => __( 'Art Work' ),
-			'rewrite' => array( 'slug' => 'portfolio' ),
+			'label' => __( 'Portfolios' ),
+			'rewrite' => array( 'slug' => 'portfolios' ),
 			'hierarchical' => true,
 		)
 	);

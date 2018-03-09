@@ -4,7 +4,7 @@
           'menu'              => 'portfolio',
           'theme_location'    => 'portfolio',
           'menu_class'        => 'side-menu__list',
-          'container'         => false,
+          'container'         =>  false,
           )
       );
   ?>
