@@ -1,20 +1,20 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Anton|Kaushan+Script');
+
 //
 // Variables
 // --------------------------------------------------
-@import url('https://fonts.googleapis.com/css?family=Anton|Kaushan+Script');
 
 
 //== Colors
-$eden: #17505B;
-$olivedrab: #75b808;
 $dimgray: #767676;
 $gallery: #eee;
 $tundora: #424242;
 $white: #fff;
 $black: #000;
 
-$color-primary: $eden;
-$color-secondary: $olivedrab;
+$color-primary: $black;
+$color-secondary: $white;
 
 //== Text Colours
 $text-color-primary: $dimgray;
@@ -24,14 +24,10 @@ $text-color-header: $color-primary;
 $text-shadow: #666;
 
 //== Background Colours
-$background-primary: $dimgray;
-$background-secondary: $tundora;
+$background-primary: $black;
+$background-secondary: $white;
 
 
 //== Fonts
 $font-family-primary: 'Anton', sans-serif;
 $font-family-secondary: 'Kaushan Script', cursive;
-
-// 'Roboto Slab', normal, 30px, 39px, #17505b;
-// 'Roboto Slab', normal, 24px, 31px, #17505b;
-// 'Roboto Slab', normal, 14px, #767676;

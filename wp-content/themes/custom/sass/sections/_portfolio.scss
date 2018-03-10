@@ -1,78 +1,51 @@
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  &__content { // fix this up
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    h2,
-    hr,
-    .button {
-      transition: all .5s;
-      color: white;
-      opacity: 0;
-    }
-    .button {
-      @extend .expand;
-    }
-  }
-
-  &__link {
-    display: block;
-    height: 100%;
-    transition: all .5s;
-    text-decoration: none;
-  }
-
   &__item {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    flex: 1 1 25%;
+    @extend .center-image;
+    flex: 1 1 25%; // make a grid pattern for this
     height: calc(50vh - 25px);
-    position: relative;
     &:nth-child(3),
     &:nth-child(4) {
       flex: 1 1 50%;
     }
     &:hover {
-      h2,
-      hr,
-      .button {
+      .portfolio__content {
         opacity: 1;
       }
     }
-    &:hover > .portfolio__link {
-        background: rgba(0, 0, 0, 0.8);
+  }
+  &__background {
+    @extend .center-flex;
+    @extend .expand-element;
+    position: relative;
+    transition: all .5s;
+    &:hover {
+      background: rgba(0, 0, 0, 0.8);
     }
   }
-
-  .portfolio__item-featured {
-    height: calc(100vh - 50px);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    h2 {
-      opacity: 1;
-    }
-    .portfolio__content {
-      position: unset;
-      left: unset;
-      top: unset;
-      transform: unset;
-      text-align: unset;
-      max-width: 50%;
-      margin-top: 50px;
-      margin-left: 60px;
-    }
+  &__content {
+    text-align: center;
+    width: 60%;
+    transition: all .5s;
+    color: white;
+    opacity: 0;
   }
-
 }
 
+// remove padding from single-portfolio second section
 .single-portfolio {
   .portfolio {
     padding-top: 0;
   }
+}
+
+.slider .portfolio__content {
+  opacity: 1;
+}
+
+// link is getting added twice so have to select 1st only
+.portfolio__background > .portfolio__link {
+  @extend .expand-element;
+  position: absolute;
 }

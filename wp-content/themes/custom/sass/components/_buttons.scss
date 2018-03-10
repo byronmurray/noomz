@@ -1,4 +1,5 @@
 .button {
+  @extend .expand;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
@@ -12,12 +13,11 @@
   text-decoration: none;
 
 
-  &__primary {
+  &__view {
     @extend .button;
     color: $white;
-    background: $color-primary;
   }
   &__secondary {
-
+    @extend .button;
   }
 }

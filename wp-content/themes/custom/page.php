@@ -1,4 +1,3 @@
-<?php /* Template Name: Internal Pages */ ?>
 <?php get_header(); ?>
 
 <div class="conatiner split-layout">

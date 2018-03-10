@@ -1,31 +1,29 @@
-<?php
+<div class="slider">
 
-  $images = get_field('gallery');
+  <?php  $images = get_field('gallery'); ?>
 
-  if( $images ): ?>
+  <?php if( $images ): ?>
 
-  <div class="slider">
+    <?php foreach( $images as $image ): ?>
 
-  <?php foreach( $images as $image ): ?>
-
-  <div class="slider-item" style="background: url(<?php echo $image['url']; ?>)">
-    <div class="portfolio__content">
-      <?php get_template_part( 'includes/loop' ) ?> <!-- be able to hide text. -->
-      <!-- if gallery put in slide show, maybe just do this any ways -->
+    <div class="slider-item" style="background: url(<?php echo $image['url']; ?>)"> <!-- repeating this -->
+      <div class="portfolio__content">
+        <?php get_template_part( 'includes/loop' ) ?>
+      </div>
     </div>
-  </div>
 
-  <?php endforeach; ?>
+    <?php endforeach; ?>
 
-  </div>
-
-<?php else: ?>
-
-  <div class="slider-item" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>) ">
-    <div class="portfolio__content">
-      <?php get_template_part( 'includes/loop' ) ?> <!-- be able to hide text. -->
-      <!-- if gallery put in slide show, maybe just do this any ways -->
     </div>
-  </div>
 
-<?php endif;  ?>
+    <?php else: ?>
+
+    <div class="slider-item" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>) "> <!-- repeating this -->
+      <div class="portfolio__content"> 
+        <?php get_template_part( 'includes/loop' ) ?>
+      </div>
+    </div>
+
+  <?php endif;  ?>
+
+</div>

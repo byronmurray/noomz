@@ -28,6 +28,10 @@
     text-shadow: 1px 1px $text-shadow;
   }
   &__catergory-list {
+    li {
+      display: inline-block;
+
+    }
     a {
       @extend .expand;
       color: #fff;
@@ -37,8 +41,6 @@
       text-shadow: 1px 1px $text-shadow;
     }
   }
-
-
 
   &__footer {
     position: fixed;
@@ -51,5 +53,6 @@
 }
 
 .home .social {
-  padding: 10px;
+  padding-bottom: 15px;
+  padding-right: 20px;
 }
