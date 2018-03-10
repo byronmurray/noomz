@@ -1,7 +1,7 @@
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-  &__content {
+  &__content { // fix this up
     position: absolute;
     left: 50%;
     top: 50%;
@@ -13,6 +13,9 @@
       transition: all .5s;
       color: white;
       opacity: 0;
+    }
+    .button {
+      @extend .expand;
     }
   }
 
@@ -66,4 +69,10 @@
     }
   }
 
+}
+
+.single-portfolio {
+  .portfolio {
+    padding-top: 0;
+  }
 }

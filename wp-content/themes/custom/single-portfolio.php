@@ -1,51 +1,29 @@
 <?php get_header(); ?>
 
-<?php $terms = get_the_terms( get_the_ID(), 'portfolios' ); ?>
-
 <div class="side-menu__container">
-
 
   <?php get_template_part( 'includes/side_menu' ) ?>
 
-  <div class="side-menu__content portfolio">
+  <div class="side-menu__content ">
+    <?php get_template_part('includes/portfolio/single') ?>
+  </div>
 
-    <div class="portfolio__item-featured" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>) ">
+</div>
 
-      <div class="portfolio__content">
-        <?php get_template_part( 'includes/loop' ) ?> <!-- be able to hide text. -->
-        <!-- if gallery put in slide show, maybe just do this any ways -->
-      </div>
+<div class="side-menu__content portfolio">
 
-    </div>
-
-    <?php
-
-      $images = get_field('gallery');
-      $size = 'full'; // (thumbnail, medium, large, full or custom size)
-
-      if( $images ): ?>
-          <ul>
-              <?php foreach( $images as $image ): ?>
-                  <li>
-                  	<?php echo wp_get_attachment_image( $image['ID'], $size ); ?>
-                  </li>
-              <?php endforeach; ?>
-          </ul>
-      <?php endif; ?>
-
-    <?php $args = array(
-         'post_type' => 'portfolio',
-         'post__not_in' => array(get_the_ID()),
-         'tax_query' => array(
-              array(
-                  'taxonomy' => 'portfolios',
-                  'field'    => 'slug',
-                  'terms'    => $terms[0]->name,
-              ),
-          ),
-         // get related posts with same catergory
-         // exclude curret item
-       );
+  <?php $terms = get_the_terms( get_the_ID(), 'portfolios' ); ?>
+  <?php $args = array(
+       'post_type' => 'portfolio',
+       'post__not_in' => array(get_the_ID()), // exclude curret item
+       'tax_query' => array( // get related posts with same catergory
+            array(
+                'taxonomy' => 'portfolios',
+                'field'    => 'slug',
+                'terms'    => $terms[0]->name,
+            ),
+        ),
+     );
 
     $art = new WP_Query($args);
     if ( $art->have_posts() ) : while ( $art->have_posts() ) : $art->the_post(); ?>

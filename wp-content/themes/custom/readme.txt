@@ -1,7 +1,9 @@
 Style headers, p, navbars
 
-Underline to extend out on hover
 
-Add slider to portfolio single, need to add gallery as well.
+Remove featured image and just use slider, if we get rid of this we will need to query this for every feature item, but could we do a on hover and it scrolls through the images, up 2 3??
 
-Remove featured image and just use slider
+Animation on the hover of portfolio. Expand outward from the center
+
+
+DRY up code before starting anything new.

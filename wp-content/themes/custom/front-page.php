@@ -17,17 +17,9 @@
 </div>
 
 
-
 <div class="cover__footer">
-
-  <div class="show-gallery">
-    show-gallery
-  </div>
-
-  <div class="social">
-    social icons
-  </div>
-
+  <?php get_template_part( 'includes/social' ) ?>
 </div>
+
 
 <?php get_footer(); ?>

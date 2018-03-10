@@ -16,7 +16,7 @@
         <a class="portfolio__link" href="<?php the_permalink() ?>">
           <div class="portfolio__content">
             <h2><?php the_title() ?></h2>
-            <hr>
+            <!-- <hr> -->
             <a class="button" href="<?php the_permalink() ?>">View Work</a>
           </div>
         </a>

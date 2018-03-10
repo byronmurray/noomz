@@ -8,6 +8,10 @@
 
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
 
+  <!-- slick slider CDNs -->
+  <!-- <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/css/slick-theme.css"/> -->
+
 
   <?php wp_head(); ?>
 </head>

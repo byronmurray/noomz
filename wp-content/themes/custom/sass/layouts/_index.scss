@@ -24,13 +24,12 @@
       font-style: italic;
       border-bottom: 4px solid white;
       padding-bottom: 20px;
-      text-shadow: 1px 1px black; // fix up to dark
+      text-shadow: 1px 1px $text-shadow;
     }
   }
   &__content-wrap {
     width: 100%;
     padding-left: 40%;
-    position: relative;
   }
   &__content {
     max-width: 65%;
@@ -44,22 +43,15 @@
     text-align: center;
     .social {
       margin-top: 1em;
-      i {
-        color: $white;
-        font-size: 1.5em;
-        padding: 4px;
-      }
     }
   }
 
   &__footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
     .copyright {
       text-align: right;
-      padding-right: 2em;
-      padding-bottom: 1em;
     }
   }
 
@@ -91,13 +83,11 @@
       padding: 8px;
     }
     a {
+      @extend .expand;
       font-size: 1.5em;
       text-transform: uppercase;
       text-decoration: none;
       color: $white;
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 

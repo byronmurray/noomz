@@ -27,15 +27,13 @@
         display: inline-block;
       }
       a {
+        @extend .expand;
         display: block;
         padding: 0 10px;
         color: $white;
         font-size: 1.2em;
         text-decoration: none;
         text-transform: uppercase;
-        &:hover {
-          text-decoration: underline;
-        }
       }
     }
 
