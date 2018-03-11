@@ -5,9 +5,11 @@
   <div class="split-layout__feature-image" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>) ">
 
     <div class="split-layout__heading"> <!-- include partials -->
-      <h1><?php the_title() ?></h1>
-      <?php get_template_part( 'includes/social' ) ?>
+      <h1 class="title__page-header"><?php the_title() ?></h1>
+      <hr>
     </div>
+
+    <?php get_template_part( 'includes/social' ) ?>
 
   </div>
 

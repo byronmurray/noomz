@@ -1,0 +1,36 @@
+form {
+  margin-top: 20px;
+}
+
+input,
+textarea
+{
+  background: #fffc;
+  color: #525865;
+  border-radius: $boarder-radius;
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.5;
+  outline: none;
+  padding: 0.5em 1.5em 0.5em;
+  transition: .2s ease-out;
+  @media (min-width: 991px) {
+    width: 100%;
+  }
+}
+input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+input:focus {
+  color: #4b515d;
+  border: 1px solid #B8B6B6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+.wpcf7-submit {
+  margin-top: 10px;
+  width: unset;
+  cursor: pointer;
+}

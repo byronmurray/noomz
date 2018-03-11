@@ -1,7 +1,7 @@
 <div class="cover"> <!-- include partials -->
   <div class="cover__content">
-    <div class="cover__name">Chris Newman</div>
-    <h2 class="cover__title">street artist</h2>
+    <div class="title__sub">Chris Newman</div>
+    <h2 class="title__main">street artist</h2>
 
       <?php
           wp_nav_menu( array(

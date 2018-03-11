@@ -40,12 +40,15 @@
   }
 }
 
-.slider .portfolio__content {
-  opacity: 1;
-}
-
 // link is getting added twice so have to select 1st only
 .portfolio__background > .portfolio__link {
   @extend .expand-element;
   position: absolute;
+}
+
+#toggle-text {
+    position: absolute;
+    left: 0%;
+    bottom: 31px;
+    color: $white;
 }

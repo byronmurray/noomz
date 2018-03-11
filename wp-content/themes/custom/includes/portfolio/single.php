@@ -10,6 +10,7 @@
       <div class="portfolio__content">
         <?php get_template_part( 'includes/loop' ) ?>
       </div>
+      <a id="toggle-text" class="button" href="#">< hide text</a>
     </div>
 
     <?php endforeach; ?>
@@ -19,9 +20,10 @@
     <?php else: ?>
 
     <div class="slider-item" style="background-image: url(<?php echo get_the_post_thumbnail_url() ?>) "> <!-- repeating this -->
-      <div class="portfolio__content"> 
+      <div class="portfolio__content">
         <?php get_template_part( 'includes/loop' ) ?>
       </div>
+      <a id="toggle-text" class="button" href="#">< hide text</a>
     </div>
 
   <?php endif;  ?>

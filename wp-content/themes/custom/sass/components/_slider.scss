@@ -2,6 +2,10 @@
 .slick-slide {
   h2 {
     opacity: 1 !important;
+    font-family: "Kaushan Script", cursive;
+    font-size: 4em;
+    line-height: 1;
+    margin-bottom: .25em;
   }
 }
 
@@ -47,12 +51,22 @@
 		background-size: cover !important;
 		background-position: center center;
 		display: flex !important;
-		justify-content: center;
-    align-items: center;
-    justify-content: center;
+		align-items: flex-end;
     min-height: 700px;
     @media (min-width: 991px) {
       height: calc(100vh - 50px)  !important;
     }
 	}
+}
+
+.slider .portfolio__content {
+  opacity: 1;
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  transition: all .5s;
+}
+
+.toggle-content {
+  margin-left: -100% !important;
 }

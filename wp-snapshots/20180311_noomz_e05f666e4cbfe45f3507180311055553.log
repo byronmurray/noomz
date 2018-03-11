@@ -1,0 +1,81 @@
+********************************************************************************
+DUPLICATOR-LITE PACKAGE-LOG: March 11, 2018 5:56 am
+NOTICE: Do NOT post to public sites or forums 
+********************************************************************************
+VERSION:	1.2.34
+WORDPRESS:	4.9.2
+PHP INFO:	7.2.0-1+ubuntu16.04.1+deb.sury.org+1 | SAPI: fpm-fcgi
+SERVER:		nginx/1.13.3 
+PHP TIME LIMIT: (0) no time limit imposed 
+PHP MAX MEMORY: 2048M (512M default) 
+MEMORY STACK: 2MB 
+
+********************************************************************************
+DATABASE:
+********************************************************************************
+BUILD MODE:   MYSQLDUMP
+MYSQLTIMEOUT: 5000
+MYSQLDUMP:    Is Supported 
+FILTERED: [] 
+RESPONSE: mysqldump: [Warning] Using a password on the command line interface can be insecure.
+ 
+TABLES: total:13 | filtered:0 | create:13 
+SQL CREATED: 20180311_noomz_e05f666e4cbfe45f3507180311055553_database.sql 
+SQL FILE SIZE: 1.07MB (1119813) 
+SQL FILE TIME: 2018-03-11 05:56:27 
+SQL RUNTIME: 0.16 sec. 
+
+******************************************************************************** 
+ARCHIVE (ZIP): 
+******************************************************************************** 
+ARCHIVE DIR:  /home/vagrant/Code/noomz 
+ARCHIVE FILE: 20180311_noomz_e05f666e4cbfe45f3507180311055553_archive.zip 
+FILTERS: *OFF* 
+DIRS:
+	not set 
+FILES:
+	not set 
+EXTS:  not set 
+---------------------------------------- 
+COMPRESSING 
+SIZE:	98.97MB 
+STATS:	Dirs 652 | Files 3,743 
+SQL ADDED: 20180311_noomz_e05f666e4cbfe45f3507180311055553_database.sql 
+ZipArchive Object
+(
+    [status] => 0
+    [statusSys] => 0
+    [numFiles] => 4395
+    [filename] => /home/vagrant/Code/noomz/wp-snapshots/tmp/20180311_noomz_e05f666e4cbfe45f3507180311055553_archive.zip
+    [comment] => 
+)
+ 
+COMPRESSION RESULT: '1' 
+COMPRESSED SIZE: 69.8MB 
+ARCHIVE RUNTIME: 17.18 sec. 
+MEMORY STACK: 4MB 
+
+******************************************************************************** 
+MAKE INSTALLER: 
+******************************************************************************** 
+Build Start 
+Build Finished 
+Preping for use 
+PACK SIZE:  
+Template parsed with new data 
+Complete [/home/vagrant/Code/noomz/wp-snapshots/tmp/20180311_noomz_e05f666e4cbfe45f3507180311055553_installer.php] 
+Added to archive 
+
+******************************************************************************** 
+INTEGRITY CHECKS: 
+******************************************************************************** 
+SQL File: 1.07MB 
+Installer File: 445.24KB 
+Archive File: 69.8MB  
+
+********************************************************************************
+RECORD ID:[2]
+TOTAL PROCESS RUNTIME: 25.59 sec.
+PEAK PHP MEMORY USED: 6MB
+DONE PROCESSING => 20180311_noomz March 11, 2018 5:56 am
+ 
