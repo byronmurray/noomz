@@ -1,25 +1,52 @@
 .cover {
+  overflow: hidden;
+}
+
+.catergory-split {
+  @extend .center-flex;
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+  flex: 1 1 25%;
+  transition: all 1s;
+
+  z-index: 99;
+  .catergory-split__content hr,.catergory-split__content a {
+    opacity: 0;
+    transition: all 1s;
+  }
+  &:hover {
+    flex: 1 1 50%;
+    transform: scale(1.1);
+    z-index: 9;
+
+    .catergory-split__content hr,.catergory-split__content a {
+      opacity: 1;
+    }
+  }
+  hr {
+    width: 80%;
+  }
+  h2 {
+    font-size: 1.5em;
+    color: white;
+    font-family: "Kaushan Script", cursive;
+  }
+  a {
+    @extend .expand;
+    color: white;
+  }
+}
+
+.cover {
   @extend .center-image;
   @extend .center-flex;
-  background-image: url(../images/feature.jpg);
   height: 100vh;
   &__content {
     text-align: center;
   }
 
-  &__catergory-list {
-    li {
-      display: inline-block;
-    }
-    a {
-      @extend .expand;
-      color: #fff;
-      text-decoration: none;
-      padding: 0 10px;
-      text-transform: uppercase;
-      text-shadow: 1px 1px $text-shadow;
-    }
-  }
+
 
   &__footer {
     position: fixed;
@@ -27,6 +54,7 @@
     display: flex;
     justify-content: flex-end;
     width: 100%;
+    z-index: 9999;
   }
 
 }
@@ -35,3 +63,48 @@
   padding-bottom: 15px;
   padding-right: 20px;
 }
+
+
+
+
+
+
+
+// Cover 1
+// .cover {
+//   @extend .center-image;
+//   @extend .center-flex;
+//   background-image: url(../images/feature.jpg);
+//   height: 100vh;
+//   &__content {
+//     text-align: center;
+//   }
+//
+//   &__catergory-list {
+//     li {
+//       display: inline-block;
+//     }
+//     a {
+//       @extend .expand;
+//       color: #fff;
+//       text-decoration: none;
+//       padding: 0 10px;
+//       text-transform: uppercase;
+//       text-shadow: 1px 1px $text-shadow;
+//     }
+//   }
+//
+//   &__footer {
+//     position: fixed;
+//     bottom: 0;
+//     display: flex;
+//     justify-content: flex-end;
+//     width: 100%;
+//   }
+//
+// }
+//
+// .home .social {
+//   padding-bottom: 15px;
+//   padding-right: 20px;
+// }
