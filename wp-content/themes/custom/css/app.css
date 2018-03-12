@@ -364,7 +364,7 @@ input:focus {
     color: #fff; }
 .side-menu__content {
   background: #fff;
-  min-height: calc(100vh - 50px);
+  height: calc(100vh - 50px);
   padding-left: 300px;
   padding-top: 50px; }
 
