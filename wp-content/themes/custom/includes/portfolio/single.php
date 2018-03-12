@@ -10,7 +10,7 @@
       <div class="portfolio__content">
         <?php get_template_part( 'includes/loop' ) ?>
       </div>
-      <a id="toggle-text" class="button" href="#">< hide text</a>
+      <span id="toggle-text" class="button" href="#">< hide text</span>
     </div>
 
     <?php endforeach; ?>
@@ -23,7 +23,7 @@
       <div class="portfolio__content">
         <?php get_template_part( 'includes/loop' ) ?>
       </div>
-      <a id="toggle-text" class="button" href="#">< hide text</a>
+      <span id="toggle-text" class="button" href="#">< hide text</span>
     </div>
 
   <?php endif;  ?>

@@ -13,6 +13,7 @@
     if ( $art->have_posts() ) : while ( $art->have_posts() ) : $art->the_post(); ?>
 
       <?php get_template_part( 'includes/portfolio/item' ) ?>
+      
 
     <?php endwhile; endif; ?>
 

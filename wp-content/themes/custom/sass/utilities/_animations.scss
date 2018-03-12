@@ -18,6 +18,14 @@
   transform-origin:0 50%;
 }
 
+
+.expand--black {
+  @extend .expand;
+  &:after {
+    border-bottom: solid 2px #5c5c5c;;
+  }
+}
+
 // current page to have
 .current-menu-item a {
   @extend .expand;

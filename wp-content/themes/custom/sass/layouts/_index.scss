@@ -3,6 +3,7 @@
   .navbar {
     background: transparent;
     li a {
+      @extend .expand--black;
       color: $black; //get better color
     }
   }
@@ -19,7 +20,7 @@
       margin-bottom: 1.4em;
       width: 80%;
       height: 4px;
-      background: #a8a8a880;
+      background: lighten($text-color-header, 20%);
       border: none;
       text-shadow: 1px 1px #ffffff1a;
     }
@@ -42,10 +43,11 @@
     margin-right: auto;
     margin-bottom: 4em;
     h2 {
-      opacity: 0.1;
+      color: lighten($text-color-header, 30%);
       font-size: 10em;
       position: fixed;
       right: 0%;
+      z-index: -1;
     }
   }
   &__heading {
@@ -55,11 +57,16 @@
     right: -139px;
   }
   &__footer {
+    color: $text-color-header;
     position: fixed;
     bottom: 5px;
     right: 10px;
     .copyright {
       text-align: right;
+    }
+    a {
+      @extend .expand--black;
+      color: darken($text-color-header, 30%);
     }
   }
 

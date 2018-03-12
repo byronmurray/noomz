@@ -14,7 +14,7 @@
   text-shadow: 1px 1px $text-shadow;
 }
 .title__page-header {
-  color: #a8a8a880; // add Variables
+  color: lighten($text-color-header, 20%); // add Variables
   font-family: "Kaushan Script", cursive;
   font-size: 5.5em;
   line-height: 1.3;
